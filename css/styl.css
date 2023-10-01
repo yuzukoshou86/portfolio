@@ -105,6 +105,27 @@ object-fit: cover;
     margin-bottom: 23px;
 }
 
+.readmore {
+    font-size: 0.875rem;
+    text-align: center;
+}
+.readmore a {
+    padding-bottom: 1px;
+    color: #333;
+    position: relative;
+}
+
+readmore a::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    transition: all 200ms ease;
+}
+
 img{
     max-width: 100%;
 
@@ -142,3 +163,4 @@ margin-bottom: 20px;
 p{
     margin: 0;
 }
+
